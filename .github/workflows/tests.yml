@@ -61,7 +61,7 @@ jobs:
           path: coverage-history.json
           key: coverage-history-${{ github.run_id }}
 
-      # Загружаем HTML-отчет как артефакт
+      # Загружаем HT ML-отчет как артефакт
       - name: Upload Coverage report
         if: always()
         uses: actions/upload-artifact@v4
